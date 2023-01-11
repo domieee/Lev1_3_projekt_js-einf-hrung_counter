@@ -1,0 +1,56 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 400px;
+    min-width: 350px;
+    border: 1px solid #000
+}
+
+form h1 {
+    margin-block: 60px 30px;
+    font-size: 2rem;
+}
+
+form p {
+    border: 1px solid #000;
+    padding: 5px 10px;
+    margin-bottom: 60px;
+    font-size: 1.5rem;
+}
+
+form > div {
+    display: grid;
+    gap: 15px;
+    grid-template-areas:
+    "b1 b2"
+    "b3 b4"
+    "b5 b6"
+    "b7 b8";
+}
+
+#b1 {grid-area: b1;}
+#b2 {grid-area: b2;}
+#b3 {grid-area: b3;}
+#b4 {grid-area: b4;}
+#b5 {grid-area: b5;}
+#b6 {grid-area: b6;}
+#b7 {grid-area: b7;}
+#b8 {grid-area: b8;}
